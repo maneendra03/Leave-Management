@@ -10,7 +10,7 @@
             </svg>
           </div>
           <span class="text-lg font-bold bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-            LeaveFlow
+            HuskyVoice AI
           </span>
         </div>
 

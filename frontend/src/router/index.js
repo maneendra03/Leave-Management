@@ -4,7 +4,9 @@ import { useAuthStore } from '../stores/auth'
 const routes = [
   {
     path: '/',
-    redirect: '/login',
+    name: 'Landing',
+    component: () => import('../views/LandingView.vue'),
+    meta: { public: true },
   },
   {
     path: '/login',
@@ -35,6 +37,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior() {
+    return { top: 0 }
+  },
 })
 
 // Navigation guards

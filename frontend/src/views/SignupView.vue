@@ -15,7 +15,7 @@
           </svg>
         </div>
         <h1 class="text-2xl font-bold bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-          LeaveFlow
+          HuskyVoice AI
         </h1>
         <p class="text-surface-400 mt-1 text-sm">Create your account</p>
       </div>
