@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: leave-backend
+    restart: always
+    env_file:
+      - ./backend/.env
+    environment:
+      - FRONTEND_URL=http://localhost
+    ports:
+      - "5001:5001"
+    networks:
+      - leave-network
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: /api
+    container_name: leave-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - leave-network
+
+networks:
+  leave-network:
+    driver: bridge
