@@ -2,6 +2,16 @@
 
 A production-ready **Leave Management System** built with **Vue.js 3**, **Node.js/Express**, and **MongoDB**. Features JWT authentication, role-based access control (Employee / Employer), and a premium dark-themed UI.
 
+
+🔑 Default Admin Credentials
+
+For testing and demo purposes, you can use the following admin credentials:
+
+Email: admin2@gmail.com
+Password: 123456789
+
+⚠️ You can also create a custom admin account by registering with your own email and password and assigning the admin role in the system.
+
 ---
 
 ## 🏗️ Tech Stack
